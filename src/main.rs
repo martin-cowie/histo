@@ -19,7 +19,7 @@ fn main() {
 
     // Iterate over histo
     for(key, value) in histo.iter() {
-        println!("{}, {}", key.format("%F %T"), value);
+        println!("{},{}", key.format("%F %T"), value);
     }
     eprintln!("consumed {} files, into {} quanta", count, histo.keys().len());
 
